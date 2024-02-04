@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | News homepage</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <img src="./assets/images/logo.svg" alt="Logo image " />
+        <div>
+          <img
+            src="assets/images/icon-menu.svg"
+            alt="menu icon"
+            class="toggle-button"
+            id="menuimage"
+            onclick="changeImage()"
+          />
+        </div>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Categories</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="grid-container">
+        <!-- reference:- https://www.w3schools.com/css/css_grid_item.asp -->
+        <div class="grid-item item1">
+          <img src="assets/images/image-web-3-desktop.jpg" />
+        </div>
+        <div class="grid-item item2">
+          <h2 class="item2-title">New</h2>
+          <h3 class="sub-title">Hydrogen VS Electric Cars</h3>
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          <hr />
+          <h3 class="sub-title">The Downsides of AI Artistry</h3>
+          <p>
+            What are the possible adverse effects of on-demand AI image
+            generation?
+          </p>
+          <hr />
+          <h3 class="sub-title">Is VC Funding Drying Up?</h3>
+          <p>
+            Private funding by VC firms is down 50% YOY. We take a look at what
+            that means.
+          </p>
+        </div>
+        <div class="grid-item item3">
+          <h1 class="item3-title">The Bright Future of Web 3.0?</h1>
+        </div>
+        <div class="grid-item item4">
+          <p>
+            We dive into the next evolution of the web that claims to put the
+            power of the platforms back into the hands of the people. But is it
+            really fulfilling its promise?
+          </p>
+          <button class="item4-btn">READ MORE</button>
+        </div>
+        <div class="grid-item item5 last-row">
+          <div><img src="assets/images/image-retro-pcs.jpg" /></div>
+          <div>
+            <h2>01</h2>
+            <h3>Reviving Retro PCs</h3>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </div>
+        <div class="grid-item item6 last-row">
+          <div><img src="assets/images/image-top-laptops.jpg" /></div>
+          <div>
+            <h2>02</h2>
+            <h3>Top 10 Laptops of 2022</h3>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
+        </div>
+        <div class="grid-item item7 last-row">
+          <div><img src="assets/images/image-gaming-growth.jpg" /></div>
+          <div>
+            <h2>03</h2>
+            <h3>The Growth of Gaming</h3>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </div>
+        <!-- <div class="grid-item item8">8</div>
+            <div class="grid-item item9">9</div> not needed any more-->
+      </div>
+    </div>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/SG75" target="_blank"
+          >Gururaj Sudhindra</a
+        >.
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
